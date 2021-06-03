@@ -1,0 +1,502 @@
+{
+  "contractName": "IOrionVoting",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "pool_address",
+          "type": "address"
+        }
+      ],
+      "name": "getPoolRewards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint56",
+          "name": "amount",
+          "type": "uint56"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "claimRewards",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint56\",\"name\":\"amount\",\"type\":\"uint56\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"claimRewards\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"pool_address\",\"type\":\"address\"}],\"name\":\"getPoolRewards\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/work/orion-14/orn-liquidity-mining/contracts/interfaces/IOrionVoting.sol\":\"IOrionVoting\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/work/orion-14/orn-liquidity-mining/contracts/interfaces/IOrionVoting.sol\":{\"keccak256\":\"0x11becc37d7f3b2e793c596d16e10b63b5965f4e3dda02ae243a441159e80aab8\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://67d71f6e78144e7db60bcdd959932a5b66cddeedb3b0414f5ebc5db384d32b60\",\"dweb:/ipfs/QmQ6ocwdo3wE58scWu6SMNLTkqhivHkEshzbef3f1cfeow\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: GPL-3.0-or-later\r\npragma solidity 0.7.6;\r\n\r\ninterface IOrionVoting {\r\n    function getPoolRewards(address pool_address) external view returns (uint256);\r\n    function claimRewards(uint56 amount, address to) external;\r\n}\r\n",
+  "sourcePath": "C:\\work\\orion-14\\orn-liquidity-mining\\contracts\\interfaces\\IOrionVoting.sol",
+  "ast": {
+    "absolutePath": "/C/work/orion-14/orn-liquidity-mining/contracts/interfaces/IOrionVoting.sol",
+    "exportedSymbols": {
+      "IOrionVoting": [
+        2688
+      ]
+    },
+    "id": 2689,
+    "license": "GPL-3.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2673,
+        "literals": [
+          "solidity",
+          "0.7",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:22:8"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2688,
+        "linearizedBaseContracts": [
+          2688
+        ],
+        "name": "IOrionVoting",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "add1739a",
+            "id": 2680,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPoolRewards",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2676,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2675,
+                  "mutability": "mutable",
+                  "name": "pool_address",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2680,
+                  "src": "126:20:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2674,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "126:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "125:22:8"
+            },
+            "returnParameters": {
+              "id": 2679,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2678,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2680,
+                  "src": "171:7:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2677,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "171:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "170:9:8"
+            },
+            "scope": 2688,
+            "src": "102:78:8",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "03499914",
+            "id": 2687,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "claimRewards",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2685,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2682,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2687,
+                  "src": "208:13:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint56",
+                    "typeString": "uint56"
+                  },
+                  "typeName": {
+                    "id": 2681,
+                    "name": "uint56",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "208:6:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint56",
+                      "typeString": "uint56"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2684,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2687,
+                  "src": "223:10:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2683,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "223:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "207:27:8"
+            },
+            "returnParameters": {
+              "id": 2686,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "243:0:8"
+            },
+            "scope": 2688,
+            "src": "186:58:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2689,
+        "src": "72:175:8"
+      }
+    ],
+    "src": "46:203:8"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/C/work/orion-14/orn-liquidity-mining/contracts/interfaces/IOrionVoting.sol",
+      "exportedSymbols": {
+        "IOrionVoting": [
+          2688
+        ]
+      },
+      "license": "GPL-3.0-or-later"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.7",
+            ".6"
+          ]
+        },
+        "id": 2673,
+        "name": "PragmaDirective",
+        "src": "46:22:8"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            2688
+          ],
+          "name": "IOrionVoting",
+          "scope": 2689
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "add1739a",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getPoolRewards",
+              "scope": 2688,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "pool_address",
+                      "scope": 2680,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2674,
+                        "name": "ElementaryTypeName",
+                        "src": "126:7:8"
+                      }
+                    ],
+                    "id": 2675,
+                    "name": "VariableDeclaration",
+                    "src": "126:20:8"
+                  }
+                ],
+                "id": 2676,
+                "name": "ParameterList",
+                "src": "125:22:8"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 2680,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2677,
+                        "name": "ElementaryTypeName",
+                        "src": "171:7:8"
+                      }
+                    ],
+                    "id": 2678,
+                    "name": "VariableDeclaration",
+                    "src": "171:7:8"
+                  }
+                ],
+                "id": 2679,
+                "name": "ParameterList",
+                "src": "170:9:8"
+              }
+            ],
+            "id": 2680,
+            "name": "FunctionDefinition",
+            "src": "102:78:8"
+          },
+          {
+            "attributes": {
+              "functionSelector": "03499914",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "claimRewards",
+              "scope": 2688,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount",
+                      "scope": 2687,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint56",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint56",
+                          "type": "uint56"
+                        },
+                        "id": 2681,
+                        "name": "ElementaryTypeName",
+                        "src": "208:6:8"
+                      }
+                    ],
+                    "id": 2682,
+                    "name": "VariableDeclaration",
+                    "src": "208:13:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "to",
+                      "scope": 2687,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2683,
+                        "name": "ElementaryTypeName",
+                        "src": "223:7:8"
+                      }
+                    ],
+                    "id": 2684,
+                    "name": "VariableDeclaration",
+                    "src": "223:10:8"
+                  }
+                ],
+                "id": 2685,
+                "name": "ParameterList",
+                "src": "207:27:8"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2686,
+                "name": "ParameterList",
+                "src": "243:0:8"
+              }
+            ],
+            "id": 2687,
+            "name": "FunctionDefinition",
+            "src": "186:58:8"
+          }
+        ],
+        "id": 2688,
+        "name": "ContractDefinition",
+        "src": "72:175:8"
+      }
+    ],
+    "id": 2689,
+    "name": "SourceUnit",
+    "src": "46:203:8"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.0",
+  "updatedAt": "2021-06-03T17:34:44.810Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
